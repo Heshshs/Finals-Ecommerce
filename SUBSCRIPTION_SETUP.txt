@@ -1,0 +1,33 @@
+1. Import the updated database.sql file.
+   If you already have the users table, add these fields instead:
+   - subscription_status
+   - subscription_plan
+   - subscription_started_at
+
+2. Add the new file: subscription.php
+
+3. Replace these files with the updated versions:
+   - auth.php
+   - login.php
+   - signup.php
+   - dashboard.php
+   - Home.php
+   - Trending.php
+   - SubbedAnime.php
+   - DubbedAnime.php
+   - movie.php
+   - profile.php
+   - styles.css
+
+4. Test flow:
+   - sign up
+   - you should be redirected to subscription.php
+   - choose a plan and submit payment info
+   - after success, you should be redirected to dashboard.php
+   - try opening dashboard.php without subscribing, it should redirect back to subscription.php
+
+Note:
+This is a simulated payment form only.
+It stores the user's subscription in the database.
+It does not charge a real credit card.
+For real payments, integrate Stripe, PayPal, or another payment gateway.
